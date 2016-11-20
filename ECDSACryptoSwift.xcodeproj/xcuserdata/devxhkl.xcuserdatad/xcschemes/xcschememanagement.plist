@@ -9,10 +9,30 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>GMCrypto.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>GMEllipticCurveCrypto.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>FA24E9351DE1B34B00340992</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FA24E9771DE1B94000340992</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FA24E9891DE1B9AD00340992</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -12,7 +12,42 @@
 		FA24E93F1DE1B34B00340992 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA24E93D1DE1B34B00340992 /* Main.storyboard */; };
 		FA24E9411DE1B34B00340992 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA24E9401DE1B34B00340992 /* Assets.xcassets */; };
 		FA24E9441DE1B34B00340992 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA24E9421DE1B34B00340992 /* LaunchScreen.storyboard */; };
+		FA24E98E1DE1B9AD00340992 /* GMCrypto.h in Headers */ = {isa = PBXBuildFile; fileRef = FA24E98C1DE1B9AD00340992 /* GMCrypto.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA24E9911DE1B9AD00340992 /* GMCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA24E98A1DE1B9AD00340992 /* GMCrypto.framework */; };
+		FA24E9921DE1B9AD00340992 /* GMCrypto.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA24E98A1DE1B9AD00340992 /* GMCrypto.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FA24E99E1DE1B9BD00340992 /* GMEllipticCurveCrypto.h in Headers */ = {isa = PBXBuildFile; fileRef = FA24E9961DE1B9BD00340992 /* GMEllipticCurveCrypto.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA24E99F1DE1B9BD00340992 /* GMEllipticCurveCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = FA24E9971DE1B9BD00340992 /* GMEllipticCurveCrypto.m */; };
+		FA24E9A01DE1B9BD00340992 /* GMEllipticCurveCrypto+hash.h in Headers */ = {isa = PBXBuildFile; fileRef = FA24E9981DE1B9BD00340992 /* GMEllipticCurveCrypto+hash.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA24E9A11DE1B9BD00340992 /* GMEllipticCurveCrypto+hash.m in Sources */ = {isa = PBXBuildFile; fileRef = FA24E9991DE1B9BD00340992 /* GMEllipticCurveCrypto+hash.m */; };
+		FA24E9A21DE1B9BD00340992 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = FA24E99A1DE1B9BD00340992 /* LICENSE.txt */; };
+		FA24E9A31DE1B9BD00340992 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = FA24E99B1DE1B9BD00340992 /* Makefile */; };
+		FA24E9A41DE1B9BD00340992 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = FA24E99C1DE1B9BD00340992 /* README.md */; };
+		FA24E9A51DE1B9BD00340992 /* test.m in Sources */ = {isa = PBXBuildFile; fileRef = FA24E99D1DE1B9BD00340992 /* test.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA24E98F1DE1B9AD00340992 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA24E92E1DE1B34B00340992 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA24E9891DE1B9AD00340992;
+			remoteInfo = GMCrypto;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FA24E9841DE1B94000340992 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FA24E9921DE1B9AD00340992 /* GMCrypto.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FA24E9361DE1B34B00340992 /* ECDSACryptoSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ECDSACryptoSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +57,30 @@
 		FA24E9401DE1B34B00340992 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA24E9431DE1B34B00340992 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA24E9451DE1B34B00340992 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA24E98A1DE1B9AD00340992 /* GMCrypto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GMCrypto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA24E98C1DE1B9AD00340992 /* GMCrypto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GMCrypto.h; sourceTree = "<group>"; };
+		FA24E98D1DE1B9AD00340992 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA24E9961DE1B9BD00340992 /* GMEllipticCurveCrypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMEllipticCurveCrypto.h; sourceTree = "<group>"; };
+		FA24E9971DE1B9BD00340992 /* GMEllipticCurveCrypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMEllipticCurveCrypto.m; sourceTree = "<group>"; };
+		FA24E9981DE1B9BD00340992 /* GMEllipticCurveCrypto+hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GMEllipticCurveCrypto+hash.h"; sourceTree = "<group>"; };
+		FA24E9991DE1B9BD00340992 /* GMEllipticCurveCrypto+hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GMEllipticCurveCrypto+hash.m"; sourceTree = "<group>"; };
+		FA24E99A1DE1B9BD00340992 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		FA24E99B1DE1B9BD00340992 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		FA24E99C1DE1B9BD00340992 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		FA24E99D1DE1B9BD00340992 /* test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = test.m; sourceTree = "<group>"; };
+		FACE6B3F1DE1D0AB0078CE53 /* ECDSACryptoSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ECDSACryptoSwift-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		FA24E9331DE1B34B00340992 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA24E9911DE1B9AD00340992 /* GMCrypto.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA24E9861DE1B9AD00340992 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				FA24E9381DE1B34B00340992 /* ECDSACryptoSwift */,
+				FA24E98B1DE1B9AD00340992 /* GMCrypto */,
 				FA24E9371DE1B34B00340992 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				FA24E9361DE1B34B00340992 /* ECDSACryptoSwift.app */,
+				FA24E98A1DE1B9AD00340992 /* GMCrypto.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,11 +117,42 @@
 				FA24E9401DE1B34B00340992 /* Assets.xcassets */,
 				FA24E9421DE1B34B00340992 /* LaunchScreen.storyboard */,
 				FA24E9451DE1B34B00340992 /* Info.plist */,
+				FACE6B3F1DE1D0AB0078CE53 /* ECDSACryptoSwift-Bridging-Header.h */,
 			);
 			path = ECDSACryptoSwift;
 			sourceTree = "<group>";
 		};
+		FA24E98B1DE1B9AD00340992 /* GMCrypto */ = {
+			isa = PBXGroup;
+			children = (
+				FA24E9961DE1B9BD00340992 /* GMEllipticCurveCrypto.h */,
+				FA24E9971DE1B9BD00340992 /* GMEllipticCurveCrypto.m */,
+				FA24E9981DE1B9BD00340992 /* GMEllipticCurveCrypto+hash.h */,
+				FA24E9991DE1B9BD00340992 /* GMEllipticCurveCrypto+hash.m */,
+				FA24E99A1DE1B9BD00340992 /* LICENSE.txt */,
+				FA24E99B1DE1B9BD00340992 /* Makefile */,
+				FA24E99C1DE1B9BD00340992 /* README.md */,
+				FA24E99D1DE1B9BD00340992 /* test.m */,
+				FA24E98C1DE1B9AD00340992 /* GMCrypto.h */,
+				FA24E98D1DE1B9AD00340992 /* Info.plist */,
+			);
+			path = GMCrypto;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		FA24E9871DE1B9AD00340992 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA24E98E1DE1B9AD00340992 /* GMCrypto.h in Headers */,
+				FA24E9A01DE1B9BD00340992 /* GMEllipticCurveCrypto+hash.h in Headers */,
+				FA24E99E1DE1B9BD00340992 /* GMEllipticCurveCrypto.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		FA24E9351DE1B34B00340992 /* ECDSACryptoSwift */ = {
@@ -74,15 +162,35 @@
 				FA24E9321DE1B34B00340992 /* Sources */,
 				FA24E9331DE1B34B00340992 /* Frameworks */,
 				FA24E9341DE1B34B00340992 /* Resources */,
+				FA24E9841DE1B94000340992 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FA24E9901DE1B9AD00340992 /* PBXTargetDependency */,
 			);
 			name = ECDSACryptoSwift;
 			productName = ECDSACryptoSwift;
 			productReference = FA24E9361DE1B34B00340992 /* ECDSACryptoSwift.app */;
 			productType = "com.apple.product-type.application";
+		};
+		FA24E9891DE1B9AD00340992 /* GMCrypto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA24E9931DE1B9AD00340992 /* Build configuration list for PBXNativeTarget "GMCrypto" */;
+			buildPhases = (
+				FA24E9851DE1B9AD00340992 /* Sources */,
+				FA24E9861DE1B9AD00340992 /* Frameworks */,
+				FA24E9871DE1B9AD00340992 /* Headers */,
+				FA24E9881DE1B9AD00340992 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GMCrypto;
+			productName = GMCrypto;
+			productReference = FA24E98A1DE1B9AD00340992 /* GMCrypto.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +203,12 @@
 				ORGANIZATIONNAME = "Zel Marko";
 				TargetAttributes = {
 					FA24E9351DE1B34B00340992 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 96HG6E2WJ6;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
+					};
+					FA24E9891DE1B9AD00340992 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 96HG6E2WJ6;
 						ProvisioningStyle = Automatic;
@@ -115,6 +229,7 @@
 			projectRoot = "";
 			targets = (
 				FA24E9351DE1B34B00340992 /* ECDSACryptoSwift */,
+				FA24E9891DE1B9AD00340992 /* GMCrypto */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +245,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FA24E9881DE1B9AD00340992 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA24E9A21DE1B9BD00340992 /* LICENSE.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -142,7 +265,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FA24E9851DE1B9AD00340992 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA24E9A51DE1B9BD00340992 /* test.m in Sources */,
+				FA24E9A31DE1B9BD00340992 /* Makefile in Sources */,
+				FA24E9A11DE1B9BD00340992 /* GMEllipticCurveCrypto+hash.m in Sources */,
+				FA24E9A41DE1B9BD00340992 /* README.md in Sources */,
+				FA24E99F1DE1B9BD00340992 /* GMEllipticCurveCrypto.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA24E9901DE1B9AD00340992 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA24E9891DE1B9AD00340992 /* GMCrypto */;
+			targetProxy = FA24E98F1DE1B9AD00340992 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FA24E93D1DE1B34B00340992 /* Main.storyboard */ = {
@@ -259,11 +402,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 96HG6E2WJ6;
 				INFOPLIST_FILE = ECDSACryptoSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zzzel.ECDSACryptoSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ECDSACryptoSwift/ECDSACryptoSwift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -272,12 +418,58 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 96HG6E2WJ6;
 				INFOPLIST_FILE = ECDSACryptoSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zzzel.ECDSACryptoSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ECDSACryptoSwift/ECDSACryptoSwift-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		FA24E9941DE1B9AD00340992 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 96HG6E2WJ6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = GMCrypto/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zzzel.GMCrypto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FA24E9951DE1B9AD00340992 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 96HG6E2WJ6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = GMCrypto/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zzzel.GMCrypto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -300,6 +492,16 @@
 				FA24E94A1DE1B34B00340992 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA24E9931DE1B9AD00340992 /* Build configuration list for PBXNativeTarget "GMCrypto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA24E9941DE1B9AD00340992 /* Debug */,
+				FA24E9951DE1B9AD00340992 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
